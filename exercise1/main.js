@@ -13,24 +13,29 @@ if (a, b, c) {
     document.write('Ошибка ввода');
 
 */
+/*
 
+Задача №2
 
-var a;
-a = prompt('Введите любое целое число -> от -999 до 999');
-switch (a) {
-    case ('100' <= a <= '999'):
-        document.write('Труф')
-        break;
-    case ('10' <= a <= '99'):
-        document.write('Пруф')
-        break;
-    case ('1' <= a <= '9'):
-        document.write('Друф')
-        break;
-    default:
-        document.write('Ошибка ввода');
+var a = parseInt(prompt('Введите целое число -> от -999 до 999'));
+if ((a <= '9') && (a >= '1')) {
+    document.write('Положительное однозначное число');
+} else if ((a >= '10') && (a <= '99')) {
+    document.write('Положительное двухзначное число');
+} else if ((a >= '100') && (a <= '999')) {
+    document.write('Положительное трехзначное число');
+} else if ((a >= '-9') && (a <= '-1')) {
+    document.write('Отрицательное однозначное число');
+} else if ((a >= '-99') && (a <= '-10')) {
+    document.write('Отрицательное двухзначное число');
+} else if ((a >= '-999') && (a <= '-100')) {
+    document.write('Отрицательное трехзначное число');
+} else if (a = '0') {
+    document.write('Число равно нулю');
+} else {
+    document.write('Ошибка ввода');
 }
-
+*/
 /*
 
 Задача №3
