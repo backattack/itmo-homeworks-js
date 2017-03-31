@@ -1,2 +1,1 @@
-# itmo study
-Home Works
+# Работы по курсу JavaScript
