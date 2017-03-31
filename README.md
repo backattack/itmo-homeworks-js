@@ -1,1 +1,2 @@
-# itmo-homeworks-js
+# itmo study
+Home Works
