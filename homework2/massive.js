@@ -70,3 +70,6 @@ b = Math.round(Math.sqrt(Math.pow(cx - bx, 2) + Math.pow(cy - by, 2)));
 console.log('Сторона B равна = ', b);
 c = Math.round(Math.sqrt(Math.pow(cx - ax, 2) + Math.pow(cy - ay, 2)));
 console.log('Сторона C равна = ', c);
+if (a + b === c || a + c === b || b + c === a) {
+    console.log('Ваш треугольник прямоугольный');
+}
