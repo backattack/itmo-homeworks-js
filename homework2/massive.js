@@ -57,6 +57,9 @@ for (var a = 0; a < massive.length; a++) {
 console.log(massive);
 
 */
+
+/*   Определить - является ли треугольник с заданными координатами прямоугольным */
+
 var ax, ay, bx, by, cx, cy, a, b, c;
 ax = prompt('Введите X для вершины A');
 ay = prompt('Введите Y для вершины A');
@@ -72,4 +75,6 @@ c = Math.round(Math.sqrt(Math.pow(cx - ax, 2) + Math.pow(cy - ay, 2)));
 console.log('Сторона C равна = ', c);
 if (a + b === c || a + c === b || b + c === a) {
     console.log('Ваш треугольник прямоугольный');
+} else {
+    console.log('Не тот треугольник!');
 }
