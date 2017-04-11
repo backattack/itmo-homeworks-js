@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homework5</title>
     <script type="text/javascript">
-    
         //Задача №1 Построить объект - студент
 
-         var obj = {
+        var obj = {
             Name: 'Ivan',
             'last name': 'Ivanov',
             Age: '25',
@@ -23,7 +22,7 @@
 
         //Задача №2 Два массива A и B, необходимо их объединить в один массив C
 
-         var arr1 = ['1', '2', '3', '4', 'один', 'два'],
+        var arr1 = ['1', '2', '3', '4', 'один', 'два'],
             arr2 = ['2', '3', '4', '5', 'два', 'три'],
             arr3 = [];
         var arr = arr3.concat(arr1, arr2);
@@ -40,19 +39,22 @@
 
         //Задача №3 Задан массив целых чисел. Написать функцию filter
 
-         var arr = [-5, 0, 5, 6, 7, 14, -4, -99, 345, -111];
-        function filter(arr, func) {
+        var arr = [-5, 0, 5, 6, 7, 14, -4, -99, 345, -111];
+
+        function func(x) {
+            return x < 0;
+        }
+
+        function filter(arr, predFunc) {
             var newArr = [];
             for (var i = 0; i < arr.length; i++) {
-                if (func(arr[i])) {
+                if (predFunc(arr[i])) {
                     newArr.push(arr[i]);
                 }
             }
             return newArr;
         }
-        console.log(filter(arr, function(x) {
-            return x < 0;
-        }));
+        console.log(filter(arr, func));
     </script>
 </head>
 
