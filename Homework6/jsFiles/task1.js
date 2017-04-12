@@ -19,9 +19,11 @@ function Func(x) {
     }
     return y;
 }
+
 for (var i = -5; i <= 5; i += 0.01) {
     line1.x.push(i);
     line1.y.push(Func(i));
 }
+
 var data = [line1];
 Plotly.newPlot('placeholder', data);
