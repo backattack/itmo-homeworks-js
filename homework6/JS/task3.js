@@ -3,17 +3,13 @@
 // - поиск максимально элемента в переданном массиве;
 // - расчет среднего арифметического значения элементов переданного массива;
 // - создание копии (клонирование) переданного массива.
-;(function() {
 
-    function Mean() {
-        var sum = 0;
-        for (var i = 0; i < arr.length; i++) {
-            sum = (sum + arr[i]) / arr.length;
+var module = (function() {
+    return {
+        minMax: function() {
+            console.log(' Максимальное значение = ' + Math.max.apply(Math, arr) + ' Минимальное значение = ' + Math.min.apply(Math, arr));
         }
-        return sum;
     }
-
-    Math.min(arr);
-
-    Math.max(arr);
 }());
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+module.minMax(arr);
