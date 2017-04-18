@@ -4,4 +4,10 @@
 // записана цифра. При клике на кнопку – её значение должно
 // увеличиваться на единицу.
 
-var button = document.getElementsByTagName('button')[0];
+var button = document.getElementById('button');
+
+button.onclick = function() {
+    if (!this.counter)
+        this.counter = 0
+    this.innerHTML = ++this.counter;
+};
