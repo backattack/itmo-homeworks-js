@@ -5,14 +5,7 @@
 // метод создаст и внесёт все необходимые html элементы, стили, и содержание для отображения
 // всей информации хранящихся в свойствах объекта о данном товаре. Дизайн оформления информации
 // в html о товаре – это ваше творчество.
-
 var product = {
-    image: 'pic1.jpeg',
-    'Item Weight': '9.6 ounces',
-    'Shipping Weight': '1.5 pounds',
-    'Manufacturer': 'Intel',
-    'ASIN': 'B004EEUHD8',
-    'Model Number': 'SLBF7',
-    'Category': ['Computer Components', 'CPU Processors']
-
+    Weight: '9.6 ounces',
+    'Manufacturer': 'Intel'
 };

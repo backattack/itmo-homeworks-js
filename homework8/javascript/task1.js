@@ -5,17 +5,21 @@
 // нажатии перекрашивается обратно и так далее каждый клик
 // происходит чередование цвета.
 
-var firstDiv = document.getElementById('obj1');
+window.onload = function() {
 
-firstDiv.onclick = function() {
-    switch (this.style.backgroundColor) {
-        case this.style.backgroundColor = "purple":
-            this.style.backgroundColor = "green"
-            this.style.color = "white"
-            break;
-        case this.style.backgroundColor = "green":
-            this.style.backgroundColor = "purple"
-            this.style.color = "black"
-            break;
+    var firstDiv = document.getElementById('obj1');
+
+    firstDiv.onclick = function() {
+        switch (this.style.backgroundColor) {
+            case "purple":
+                this.style.backgroundColor = "green"
+                this.style.color = "white"
+                break;
+            case "green":
+                this.style.backgroundColor = "purple"
+                this.style.color = "black"
+                break;
+        };
     };
-};
+
+}
