@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MAP</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/c"></script>
+    <style>
+        #mapid {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='mapid'></div>
+    <button id="mapButton"> My rest ZONE</button>
+
+    <footer></footer>
+    <script type="text/javascript">
+        var map = L.map('mapid').setView([59.927161, 30.338659], 15);
+
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([59.927161, 30.338659]).addTo(map)
+            .bindPopup('WE ARE HERE.')
+            .openPopup();
+
+        mapButton.onclick = function() {
+            L.marker([59.92722, 30.339536]).addTo(map)
+                .bindPopup('coffe zone!!!!!')
+                .openPopup();
+        }
+    </script>
+</body>
+
+</html>
