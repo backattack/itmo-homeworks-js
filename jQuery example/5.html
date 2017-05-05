@@ -1,0 +1,34 @@
+<!DOCTYPE html> s
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src='jquery-3.2.1.min.js'></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+        </tr>
+    </table>
+    <script>
+        $('table').find('td:odd')
+            .css('background-color', 'yellow')
+            .end()
+            .find('td:even')
+            .css('background-color', 'black')
+    </script>
+</body>
+
+</html>

@@ -11,7 +11,9 @@ window.onload = function () {
     var box2 = document.getElementById("box2");
 
     function Collision(obj1, obj2) {
-        return (obj1.offsetLeft <= obj2.offsetLeft + obj2.offsetWidth && obj1.offsetLeft + obj1.offsetWidth >= obj2.offsetLeft && obj1.offsetTop + obj1.offsetHeight >= obj2.offsetTop && obj1.offsetTop <= obj2.offsetTop + obj2.offsetHeight);
+        return (obj1.offsetLeft <= obj2.offsetLeft + obj2.offsetWidth && obj1.offsetLeft +
+            obj1.offsetWidth >= obj2.offsetLeft && obj1.offsetTop +
+            obj1.offsetHeight >= obj2.offsetTop && obj1.offsetTop <= obj2.offsetTop + obj2.offsetHeight);
     }
 
     function move() {

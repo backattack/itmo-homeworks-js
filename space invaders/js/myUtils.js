@@ -3,7 +3,7 @@
     window.SpaceInviders = function (el) {
         el.style.height = '500px';
         el.style.width = '100%';
-        el.style.background = 'url(img/mad-space.gif)';
+        el.style.background = 'black';
         this.gameManager = new GameManager(el);
     }
 
